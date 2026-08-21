@@ -1,0 +1,2 @@
+import Reveal from './Reveal';
+export default function Timeline({w}){return <section className="section timeline"><Reveal><span className="eyebrow">Как всё будет</span><h2>ТАЙМИНГ ДНЯ</h2><div className="timeline-list">{w.timeline.map((item,i)=><div className="timeline-item" key={`${item.time}-${i}`}><div className="timeline-time">{item.time}</div><div className="timeline-dot"/><div className="timeline-copy"><h3>{item.title}</h3><p>{item.description}</p></div></div>)}</div></Reveal></section>}

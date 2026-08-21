@@ -1,0 +1,1 @@
+export default function Footer({w}){return <footer className="footer"><div className="footer__photo" style={{backgroundImage:`url(${w.gallery[0]})`}}/><span className="eyebrow light">С любовью,</span><h2>{w.couple.groom} <span>&amp;</span> {w.couple.bride}</h2><p>{w.contactInformation}</p><small>Будем ждать вас на главном событии нашей жизни</small></footer>}
